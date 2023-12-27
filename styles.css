@@ -230,7 +230,7 @@ section {
   .container {
     width: 90%;
     /* margin: 0 auto; */
-    padding: 50px 0;
+    /* padding: 0px 0; */
     /* overflow-x: hidden; */
   }
 
@@ -271,7 +271,20 @@ section {
     padding: 13px 50px 13px;
   }
 
+  /*  */
+
+  .section--1,
+  .section--2 {
+    padding: 8px;
+  }
+
   /* section--2 */
+
+  .right-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .section--2 {
     grid-template-columns: 1fr;
   }
