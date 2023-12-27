@@ -17,8 +17,8 @@
 }
 
 body {
-  background-color: #b8839c;
-  color: #444;
+  background-color: green;
+  color: rgb(241, 236, 236);
 }
 
 a {
@@ -81,7 +81,8 @@ li {
 
 .section--1,
 .section--2,
-.section--3 {
+.section--3,
+.section--4 {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -222,6 +223,68 @@ section {
   padding: 100px 0;
 }
 
+/* ROADMAP */
+
+.cards {
+  height: 70vh;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+.card-1 {
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.card-2 {
+  left: 35px;
+  top: 35px;
+  overflow: hidden;
+}
+
+.card-3 {
+  left: 70px;
+  top: 70px;
+  overflow: hidden;
+}
+
+.card h2,
+.card p {
+  font-size: 3rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  color: #ff98a2;
+  text-transform: uppercase;
+}
+
+.cards line {
+  background-color: white;
+  height: 3px;
+}
+
+.section-title {
+  text-align: center;
+  padding: 50px 0;
+}
+
 @media (min-width: 768px) {
 }
 
@@ -303,5 +366,37 @@ section {
 
   .section--2 {
     grid-template-columns: 1fr;
+  }
+
+  /* ROADMAP */
+  .card-1 {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .card-2 {
+    left: 35px;
+    top: 35px;
+    width: 100%;
+  }
+
+  .card-3 {
+    left: 50px;
+    top: 50px;
+    width: 100%;
+  }
+
+  .card h2,
+  .card p {
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: #ff98a2;
+    text-transform: uppercase;
+  }
+
+  .card div div {
+    padding: 20px 5px;
   }
 }
