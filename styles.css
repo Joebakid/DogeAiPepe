@@ -389,7 +389,7 @@ section {
 
   .card h2,
   .card p {
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     font-weight: 900;
     font-stretch: condensed;
     color: #ff98a2;
@@ -397,6 +397,6 @@ section {
   }
 
   .card div div {
-    padding: 20px 5px;
+    padding: 50px 5px;
   }
 }
