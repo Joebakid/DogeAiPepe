@@ -26,8 +26,8 @@ gsap.fromTo(
 
 gsap.fromTo(
   ".section--1-title",
-  { opacity: 0, xPercent: -50 },
-  { opacity: 1, duration: 1, xPercent: 0 },
+  { opacity: 0 },
+  { opacity: 1, duration: 1 },
   ">"
 );
 

@@ -229,9 +229,6 @@ section {
 
   .container {
     width: 90%;
-    /* margin: 0 auto; */
-    /* padding: 0px 0; */
-    /* overflow-x: hidden; */
   }
 
   /* section--1 */
@@ -248,7 +245,7 @@ section {
 
   .sub-title {
     color: white;
-    font-size: 0.83rem;
+    font-size: 1.1rem;
     padding-bottom: 10px;
   }
 
@@ -275,7 +272,7 @@ section {
 
   .section--1,
   .section--2 {
-    padding: 8px;
+    padding: 20px;
   }
 
   /* section--2 */
