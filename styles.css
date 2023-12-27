@@ -280,6 +280,7 @@ section {
   .right-gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .section--2 {
