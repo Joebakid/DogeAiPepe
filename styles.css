@@ -217,6 +217,11 @@ section {
   line-height: 2;
 }
 
+.sectionThree {
+  background-color: rgb(80, 78, 78);
+  padding: 100px 0;
+}
+
 @media (min-width: 768px) {
 }
 
