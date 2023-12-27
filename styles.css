@@ -21,6 +21,10 @@ body {
   color: #444;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* NAV */
 
 .nav-container {
@@ -28,7 +32,7 @@ body {
   justify-content: end;
   width: 80%;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 20px 0;
   overflow-x: hidden;
 }
 
@@ -37,6 +41,14 @@ ul {
   gap: 50px;
   align-items: center;
   justify-content: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
 }
 
 .search-content {
@@ -45,11 +57,12 @@ ul {
   justify-content: center;
   gap: 5px;
   transition: all 0.5s ease-in-out;
-}
-
-.search-content {
   color: white;
   opacity: 0;
+}
+
+.search-content:hover {
+  color: #6e5c3c;
 }
 
 .social-icon {
@@ -66,16 +79,21 @@ li {
   cursor: pointer;
 }
 
-/* li:hover {
-  border: 1px solid #a9e5ce;
-} */
-
 /* section--1 */
 .section--1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px;
 }
 
 .sub-title {
