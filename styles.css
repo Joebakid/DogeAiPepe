@@ -80,7 +80,8 @@ li {
 }
 
 .section--1,
-.section--2 {
+.section--2,
+.section--3 {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -93,7 +94,7 @@ li {
 
 header,
 section {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 /* section--1 */
@@ -209,6 +210,13 @@ section {
   line-height: 1.7;
 }
 
+/* section--3 */
+
+.section--3-text {
+  color: white;
+  line-height: 2;
+}
+
 @media (min-width: 768px) {
 }
 
@@ -271,7 +279,8 @@ section {
   /*  */
 
   .section--1,
-  .section--2 {
+  .section--2,
+  .section--3 {
     padding: 20px;
   }
 
