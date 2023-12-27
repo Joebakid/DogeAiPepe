@@ -46,8 +46,10 @@ gsap.fromTo(
 );
 
 gsap.fromTo(
-  ".button-52",
+  ".button-animate",
   { opacity: 0, xPercent: -50 },
   { opacity: 1, duration: 0.5, stagger: 1, xPercent: 0 },
   ">"
 );
+
+// section-2
