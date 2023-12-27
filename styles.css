@@ -81,8 +81,7 @@ li {
 
 .section--1,
 .section--2,
-.section--3,
-.section--4 {
+.section--3 {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -266,12 +265,19 @@ section {
   overflow: hidden;
 }
 
-.card h2,
-.card p {
+.card h2 {
   font-size: 3rem;
   font-weight: 900;
   font-stretch: condensed;
   color: #ff98a2;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-size: 3rem;
+  font-weight: 900;
+  font-stretch: condensed;
+  color: #444;
   text-transform: uppercase;
 }
 
@@ -280,9 +286,41 @@ section {
   height: 3px;
 }
 
+.card div div {
+  padding: 50px 5px;
+}
+
 .section-title {
   text-align: center;
   padding: 50px 0;
+}
+
+/* FOOTER */
+.sectionFour {
+  background-color: #444;
+}
+
+.footer-list {
+  display: flex;
+  width: 30%;
+  /* flex-direction: column; */
+  gap: 30px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+.footer-list a {
+  color: white;
+}
+
+.copy-right {
+  padding: 30px 0;
 }
 
 @media (min-width: 768px) {
@@ -390,13 +428,13 @@ section {
   .card h2,
   .card p {
     font-size: 0.85rem;
-    font-weight: 900;
-    font-stretch: condensed;
-    color: #ff98a2;
-    text-transform: uppercase;
   }
 
   .card div div {
     padding: 50px 5px;
+  }
+
+  .footer-list {
+    width: 100%;
   }
 }

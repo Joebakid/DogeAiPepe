@@ -1,13 +1,13 @@
 gsap.fromTo(
   ".search-content",
-  { opacity: 0, xPercent: -20 },
-  { opacity: 1, duration: 1, stagger: 0.2, xPercent: 0, ease: "power2.out" },
+  { opacity: 0 },
+  { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.out" },
   ">"
 );
 gsap.fromTo(
   ".social-icon",
-  { opacity: 0, xPercent: -20 },
-  { opacity: 1, duration: 1, stagger: 0.2, xPercent: 0, ease: "power2.out" },
+  { opacity: 0 },
+  { opacity: 1, duration: 1, stagger: 0.2, ease: "power2.out" },
   ">"
 );
 
