@@ -73,7 +73,7 @@ const sectionOneScroll = gsap.timeline({
 const sectionTwoScroll = gsap.timeline({
   scrollTrigger: {
     trigger: ".sectionTwo",
-    start: "60%",
+    start: "80%",
     end: "100%",
     // markers: { startColor: "blue", endColor: "blue" },
     pin: true,

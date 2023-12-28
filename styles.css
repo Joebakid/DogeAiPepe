@@ -210,6 +210,10 @@ section {
   line-height: 1.7;
 }
 
+.minting-info {
+  color: white;
+}
+
 /* section--3 */
 
 .section--3-text {
@@ -330,7 +334,7 @@ section {
 /* //////////////////////////////////////////////////////////////  */
 /* //////////////////////////////////////////////////////////////  */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
   /* NAV */
   .nav-container {
     display: block;
