@@ -301,6 +301,10 @@ section {
 
 /* mINTING INFO */
 
+.mint-info-data {
+  color: white;
+}
+
 .minting-info {
   display: flex;
   gap: 20px;
