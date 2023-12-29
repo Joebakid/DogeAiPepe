@@ -299,6 +299,18 @@ section {
   padding: 50px 0;
 }
 
+/* mINTING INFO */
+
+.minting-info {
+  display: flex;
+  gap: 20px;
+}
+.minting-info div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* FOOTER */
 .sectionFour {
   background-color: #444;
