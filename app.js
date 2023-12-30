@@ -151,8 +151,8 @@ timeln.to(".card-3", {
 timeln.to(".card-3", {});
 
 // TIMER
+const countDownDate = new Date("2023-12-30T15:00:00Z").getTime();
 
-const countDownDate = new Date("30 Dec ,2023 15:00:00").getTime();
 const x = setInterval(function () {
   const now = new Date().getTime();
   const distance = countDownDate - now;
@@ -162,11 +162,12 @@ const x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
-  // document.getElementById("days").innerHTML = days;
+  document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+  document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+  document.getElementById("minutes").innerHTML =
+    minutes < 10 ? "0" + minutes : minutes;
+  document.getElementById("seconds").innerHTML =
+    seconds < 10 ? "0" + seconds : seconds;
 
   if (distance < 0) {
     clearInterval(x);
@@ -175,6 +176,6 @@ const x = setInterval(function () {
     document.getElementById("minutes").innerHTML = "00";
     document.getElementById("seconds").innerHTML = "00";
   }
-});
+}, 1000);
 
 console.log(countDownDate);
